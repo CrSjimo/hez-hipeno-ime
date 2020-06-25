@@ -33,7 +33,7 @@ export const replacements = [
 export function inputCallback(text:string){
     let targetReplacementId = -1;
     let candidates:boolean[] = [];
-    for(let offset = 0;offset<text.length;offset++){
+    for(let offset = 0;offset<=text.length;offset++){
         let textIndex = text.length-offset-1;
         let allReplacementOverflow = true;
         for(let replacementIndex = 0;replacementIndex < replacements.length;replacementIndex++){
