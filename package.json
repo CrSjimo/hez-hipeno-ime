@@ -1,0 +1,31 @@
+{
+  "name": "hez-hipeno-ime",
+  "version": "1.0.0",
+  "description": "hez hipeno IME  hez hipeno bue ïnte mesod",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrSjimo/hez-hipeno-ime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrSjimo/hez-hipeno-ime/issues"
+  },
+  "homepage": "https://github.com/CrSjimo/hez-hipeno-ime#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
