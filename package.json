@@ -24,7 +24,7 @@
 				"title": "Toggle IME enabled/disabled"
 			}
 		],
-		"keybindings":[
+		"keybindings": [
 			{
 				"command": "extension.start",
 				"key": "Ctrl+Alt+H"
