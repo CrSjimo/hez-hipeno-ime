@@ -2,7 +2,7 @@
 	"name": "hez-hipeno-ime",
 	"displayName": "hez hipeno IME",
 	"description": "",
-	"version": "0.0.1",
+	"version": "3.0.0",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
@@ -10,30 +10,43 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.start"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.start",
-				"title": "Start Hez Hipeno IME"
-			},
-			{
 				"command": "extension.toggle",
 				"title": "Toggle IME enabled/disabled"
+			},
+			{
+				"command": "extension.suspend",
+				"title": "Toggle IME suspended"
+			},
+			{
+				"command": "extension.mode",
+				"title": "Toggle IME character mode"
+			},
+			{
+				"command": "extension.convert.mode",
+				"title": "Convert current selection"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "extension.start",
+				"command": "extension.mode",
 				"key": "Ctrl+Alt+H"
 			},
 			{
 				"command": "extension.toggle",
 				"key": "Ctrl+Alt+T"
 			}
-		]
+		],
+		"menus": {
+			"editor/context": [{
+				"command": "extension.convert.mode"
+			}]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
