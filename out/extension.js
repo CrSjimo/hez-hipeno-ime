@@ -16,7 +16,7 @@ function toggle() {
         statusBarItem.text = 'hez xipenó';
         statusBarItem.command = 'extension.toggle';
         statusBarItem.show();
-        bufferStatus = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left);
+        bufferStatus = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, -114514);
         bufferStatus.show();
     }
     else {
